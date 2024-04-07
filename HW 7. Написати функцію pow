@@ -1,0 +1,9 @@
+function pow(degree, valueofDegree) {
+  let result = 1; 
+  for (let t = 1; t <= valueofDegree; t++) { 
+      result *= degree;  
+  }
+  console.log(result); 
+}
+
+pow(5, 2);
