@@ -1,0 +1,11 @@
+function drawTriangle(height, valueSymbol) {
+  for (var t = 1; t <= height; t++) {
+      var row = '';
+      for (var i = 1; i <= t; i++) {
+          row += valueSymbol;
+      }
+      console.log(row);
+  }
+}
+
+drawTriangle(9, '*');
