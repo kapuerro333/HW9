@@ -1,0 +1,32 @@
+let row = "qwerty";
+let symbol = "+";
+let symbNum = 6;
+let bulea = true;
+
+function pad(row, symbol, symbNum, bulea) {
+    if (row.length >= symbNum) {
+        return row;
+    }
+
+    if (bulea === true) {
+        if (row.length < symbNum) {
+            let addSymb = symbNum - row.length;
+            let quantitySymb = "";
+            for (let i = 0; i < addSymb; i++) {
+                quantitySymb = quantitySymb + symbol;
+            }
+            return quantitySymb + row;
+        }
+    } else {
+        if (row.length < symbNum) {
+            let addSymb = symbNum - row.length;
+            let quantitySymb = "";
+            for (let i = 0; i < addSymb; i++) {
+                quantitySymb = quantitySymb + symbol;
+            }
+            return row + quantitySymb;
+        }
+    }
+}
+
+console.log(pad(row, symbol, symbNum, bulea));
